@@ -1,0 +1,33 @@
+body{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+}
+
+.video_background{
+    position: absolute;
+    z-index: 1;
+}
+
+.container{
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+#map{
+    margin: 10px;
+}
+
+.card-body{
+    margin-bottom: 30px;
+    padding: 10px;
+    border: white;
+    border-radius: 1em;
+    border-style: solid;
+}
+
+.card-link{
+    margin-left: 15px;
+}

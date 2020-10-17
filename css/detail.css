@@ -1,0 +1,30 @@
+/*!
+ * Start Bootstrap - Small Business (https://startbootstrap.com/templates/small-business)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-small-business/blob/master/LICENSE)
+ */
+
+ body {
+    padding-top: 56px;
+  }
+
+  .star_rating {
+    font-size:50px; 
+    letter-spacing:-10px;
+}
+
+.star_rating a {
+    font-size:50px;
+    letter-spacing:0;
+    display:inline-block;
+    margin-left:5px;
+    color:#ccc;
+    text-decoration:none;
+}
+
+.star_rating a:first-child {
+    margin-left:0;
+}
+.star_rating a.on {
+    color:#777;
+}
