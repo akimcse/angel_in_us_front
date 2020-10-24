@@ -1,33 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap');
 *{
-  font-family: 'Noto Sans KR', sans-serif;
+    color: white;
 }
 
- body {
-    padding-top: 56px;
-    background: #fff5e7;
-  }
-
-  .star_rating {
-    font-size:50px; 
-    letter-spacing:-10px;
+body{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: black;
 }
 
-.star_rating a {
-    font-size:50px;
-    letter-spacing:0;
-    display:inline-block;
-    margin-left:5px;
-    color:#ccc;
-    text-decoration:none;
+.video_background{
+    position: absolute;
+    z-index: 1;
 }
 
-.star_rating a:first-child {
-    margin-left:0;
+.container{
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 100px;
 }
-.star_rating a.on {
-    color:#777;
+
+#map{
+    margin: 10px;
 }
+
+.card-body{
+    margin-bottom: 30px;
+    padding: 10px;
+    border: white;
+    border-radius: 1em;
+    border-style: solid;
+}
+
+.card-link{
+    margin-left: 15px;
+}
+
 .seats{
     margin-left: 1em;
 }

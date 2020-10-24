@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    
+    <title>Angel-in-us</title>
+    
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/coming-sssoon.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/detail2.css" rel="stylesheet" />
+    
+    <!--     Fonts     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=___"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                <img src="images/flags/KR.png"/> 
+                    한국어
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><img src="images/flags/US.png"/> English(US)</a></li>
+                <li><a href="#"><img src="images/flags/GB.png"/> English(UK)</a></li>
+                <li><a href="#"><img src="images/flags/FR.png"/> Français</a></li>
+                <li><a href="#"><img src="images/flags/DE.png"/> Deutsche</a></li>
+                <li><a href="#"><img src="images/flags/CN.png"/> 中文</a></li>
+                
+                <li class="divider"></li>
+                <li><a href="#"><img src="images/flags/JP.png"/> 日本語 <span class="label label-default">soon</span></a></li>
+              </ul>
+        </li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="https://ko-kr.facebook.com/angelinustime/"> 
+                    <i class="fa fa-facebook-square"></i>
+                    Facebook
+                </a>
+            </li>
+             <li>
+                <a href="https://www.instagram.com/angelinus_coffee/?hl=ko"> 
+                    <i class="fa fa-instagram"></i>
+                    Instagram
+                </a>
+            </li>
+       </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0"> 
+  <source src="http://webimage.ldcc.co.kr/upload/grs/movie/angel_20200821.mp4?2020-10-08" type="video/mp4">
+  Video not supported 
+</video>
+<div class="cover black" data-color="black"></div>
+
+<!-- Page Content -->
+<div class="container">
+  <!-- Heading Row -->
+  <div class="row align-items-center my-5">
+    <div class="col-md-5 mb-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title"> 1층 좌석배치도 </h4>
+          <p class="card-text"><img class="seats" src="images/좌석표2.png" alt="좌석표" width="340" height="150"></p>
+        </div>
+      </div>
+    </div>
+    <div class="seat-now">
+      <p>1층 잔여석 현황 (좌측의 좌석배치도에서 테이블 넘버를 확인해주세요)</p>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 1</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 2</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 3</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 4</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 5</span>
+    </div>
+  </div>
+
+  <div class="row align-items-center my-5">
+    <div class="col-md-5 mb-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title"> 2층 좌석배치도 </h4>
+          <p class="card-text"><img class="seats" src="images/좌석표.png" alt="좌석표" width="340" height="250"></p>
+        </div>
+      </div>
+    </div>
+    <div class="seat-now">
+      <p>2층 잔여석 현황 (좌측의 좌석배치도에서 테이블 넘버를 확인해주세요)</p>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 1</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 2</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 3</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 4</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 5</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 6</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 7</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 8</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 9</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 10</span> </br>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 11</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 12</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 13</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 14</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 15</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 16</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 17</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 18</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 19</span> </br>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 20</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 21</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 22</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 23</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 24</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 25</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 26</span>
+      <span seat="_석" id="seat-now" class="btn btn-secondary btn-sm">Table 27</span>
+    </div>
+  </div>
+  
+  <!-- /.row -->
+
+  <!-- Call to Action Well -->
+  <div class="card text-white bg-secondary my-5 py-4 text-center">
+    <div class="card-body">
+      <MARQUEE behavior scrollamount="5" >지금 __점에서 흘러나오는 노래 : Abir - Tango &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp __점 실시간 인기메뉴 : 듬뿍 콘버터 (4500) &nbsp&nbsp 청도홍시 듬뿍 스노우 (6500)  </MARQUEE> 
+    </div>
+  </div>
+
+  <!-- Content Row -->
+  <div class="row">
+    <div class="col-md-6 mb-5">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="checks">
+            <input type="checkbox" id="ex_chk">
+            <label for="ex_chk">공부</label>
+            </div>
+            <div class="checks">
+            <input type="checkbox" id="ex_chk">
+            <label for="ex_chk">대화</label>
+            </div>
+            <div class="checks">
+            <input type="checkbox" id="ex_chk">
+            <label for="ex_chk">식품섭취</label>
+            </div>
+            <div class="checks">
+            <input type="checkbox" id="ex_chk">
+            <label for="ex_chk">기타</label>
+            </div>
+            
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn btn-secondary btn-sm">더보기</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.col-md-4 -->
+    <div class="col-md-6 mb-5">
+      <div class="card h-100">
+        <div class="card-body">
+          <h2 class="card-title">Card Two</h2>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn btn-secondary btn-sm">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
